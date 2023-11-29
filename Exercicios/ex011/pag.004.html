@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos dicferentes ou simplesmente aumente e diminua o tamanho da janel ado
+        seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="foto-m.png" type="image/png">
+        <img src="foto-g.png" alt="Imagem Flexível">
+    </picture>
+    <br>
+    <a href="index.html">Voltar para a primeira página</a>
+<h1>Reproduzindo áudio:</h1>
+<p>Vamos aprender a reproduzir áudios em HTML5</p>
+
+<audio preload="metadata" controls>
+<source src="Nirvana.mp3" type="audio/mp3">
+</audio>
+
+<h1>Reproduzindo Vídeos</h1>
+<p>Vamos aprender como inserir videos com HTML5 hospedados localmente</p>
+
+<video src="lemonpeq.mp4" width="700" controls></video>
+
+<h1>Inserindo vídeos de serviços externos</h1>
+<p>Inserindo videos do Youtube</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LW0bhKitRBk?si=1pCLaj8zj-DGklGs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<p>inserindo videos do Vimeo</p>
+<iframe src="https://player.vimeo.com/video/725733980?h=70b37988d5&color=e98a60" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+
+
+</body>
+</html>
