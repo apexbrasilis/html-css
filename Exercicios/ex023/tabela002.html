@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        table {
+            margin: auto;
+            width: 500px;
+            border-collapse: collapse;
+            text-align: center;
+            box-shadow: 2px 2px 6px 0px;
+            border: 1pix solid black;
+            padding: 8px;
+            position: relative;
+
+        }
+
+        td,
+        th {
+            border: solid 1px black;
+            padding: 10px;
+        }
+
+        thead {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            text-align: center;
+            font-size: large;
+
+
+        }
+thead >tr >th{
+position: sticky;
+top: -1px;
+background-color: black;
+}
+        tbody {
+            border: 1px solid black;
+            padding: 8px;
+        }
+tbody > tr:nth-child(2n){
+    background-color: lightgrey;
+}
+        tfoot {
+            background-color: rgb(157, 11, 11);
+            color: white;
+            text-align: center;
+            font-size: normal;
+            border-collapse: collapse;
+            text-align: center;
+            border: 3pix solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+    <table id="tabela1">
+        <table>
+            <caption>
+                *População brasileira por Estados
+            </caption>
+            <thead>
+                <tr>
+                    <th>Estado</th>
+                    <th>População</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td>44.411.238</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td>44.411.238</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td>44.411.238</td>
+                </tr>
+                <tr>
+                    <td>Santa Catarina</td>
+                    <td>44.411.238</td>
+                <tr>
+                    <td>Rio Grande do Sul</td>
+                    <td>44.411.238</td>
+                </tr>
+                <tr>
+                    <td>Paraná</td>
+                    <td>44.411.238</td>
+                </tr>
+                <tr>
+                    <td>Mato Grosso do Sul</td>
+                    <td>44.411.238</td>
+                </tr>
+                <tr>
+                    <td>Pernambuco</td>
+                    <td>44.411.238</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td>44.411.238</td>
+                </tr>
+                <tr>
+                    <td>Pará</td>
+                    <td>44.411.238</td>
+                </tr>
+                <tr>
+                    <td>Amazonas</td>
+                    <td>44.411.238</td>
+                </tr>
+                <tr>
+                    <td>Rondonia</td>
+                    <td>44.411.238</td>
+                </tr>
+                <tr>
+                    <td>Distrito Federal</td>
+                    <td>44.411.238</td>
+                </tr>
+                <tr>
+                    <td>Sergipe</td>
+                    <td>44.411.238</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Total de Habitantes</th>
+                    <td>00000</td>
+                </tr>
+            </tfoot>
+        </table>
+
+</body>
+
+</html>
