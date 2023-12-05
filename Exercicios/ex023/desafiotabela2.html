@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafiotabela2</title>
+    <style>
+        h1{
+            text-align: center;
+            color:rgb(0, 0, 0);
+            text-shadow: 5px 5px 13px 5px black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            font-family: Arial, Helvetica, sans-serif;
+            width: 700px;
+            height: 500px;
+            margin: auto;
+            border-collapse: collapse;
+            box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.548);
+
+        }
+        td,th{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            
+        }
+        thead{
+            font-weight: bolder;
+            background-color: rgba(34, 33, 33, 0.954);
+            color: white;
+        }
+        .nome{
+            background-color: rgba(0, 255, 255, 0.438);
+        }
+        p{
+            margin-top: 40px;
+            padding: 20px;
+        }
+        .thead{
+            background-color: rgb(92, 91, 91);
+            color: white;
+            font-weight: bold;
+        }
+        tfoot{
+            background-color: rgb(92, 91, 91);
+            color: white;
+            font-weight: bold;
+        }
+        .tipo{
+            background-color: beige;
+            font-weight: bold;
+        }
+        .materia{
+            background-color: lightgrey;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Filmes Prediletos</h1>
+    <table>
+        <caption>*Filmes por preferência</caption>
+        <thead>
+            <th scope="col">Grupo</th>
+            <th>Nomes</th>
+            <th scope="colgroup" colspan="3">Filmes</th>
+        </thead>
+        <tr>
+            <th rowspan="3" scope="rowgroup" style="background-color: pink;">Mulheres</th>
+            <td class="nome">Ana Maria Santos</td>
+            <td>Alien</td>
+            <td>Rambo</td>
+            <td>Vingadores</td>
+        </tr>
+        <tr>
+            <td class="nome">Beatriz Souza</td>
+            <td>Hulk</td>
+            <td>Inception</td>
+            <td>Batman</td>
+        </tr>
+        <tr>
+            <td class="nome">Claudia Melo</td>
+            <td>Oblivion</td>
+            <td>Matrix</td>
+            <td>Big Hero</td>
+        </tr>
+        <tr>
+            <th rowspan="3" scope="rowgroup" style="background-color: rgba(34, 119, 217, 0.784);">Homens</th>
+            <td class="nome">Bruno Mendonça</td>
+            <td>Intocáveis</td>
+            <td>Amnésia</td>
+            <td>Gladiador</td>
+        </tr>
+        <tr>
+            <td class="nome">Daniel Lourenço</td>
+            <td>Wall-e</td>
+            <td>Oldboy</td>
+            <td>Dangal</td>
+        </tr>
+        <tr>
+            <td class="nome">Fabiano Mota</td>
+            <td>Star Wars 5</td>
+            <td>Taxi Driver</td>
+            <td>Toy Story</td>
+        </tr>
+    </table>
+
+    <h1>Boletim escolar</h1>
+    <table>
+        <caption>*notas escolares do aluno</caption>
+        <tr class="thead">
+            <th rowspan="2" scope="col">Área</th>
+            <th rowspan="2" scope="col">Disciplinas</th>
+            <th colspan="2" scope="colgroup">Notas</th>
+            <th rowspan="2" scope="col">Média</th>
+        </tr>
+        <tr class="thead">
+            <th scope="col">Nota1</th>
+            <th scope="col">Nota2</th>
+        </tr>
+        <tr>
+            <th class="tipo" rowspan="4" scope="rowgroup">exatas</th>
+            <th class="materia" scope="row" >Matemática</th>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <th class="materia" scope="row">Física</th>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <th class="materia" scope="row">Química</th>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <th class="materia" scope="row">Biologia</th>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr class="thead">
+            <th colspan="4" scope="row">Média de Exatas</th>
+            <td>0.0</td>
+            
+            
+        </tr>
+        <tr>
+            <th class="tipo" rowspan="2" scope="row">Humanas</th>
+            <th class="materia">História</th>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <th class="materia" scope="row">Geografia</th>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tfoot>
+            <th colspan="4" scope="row">Média de Humanas</th>
+            <td>0.0</td>
+        </tfoot>
+    </table>
+    <p><strong>Lorem ipsum</strong> dolor sit, amet consectetur adipisicing elit. Velit, officiis facere. Hic laborum fugiat vero esse consequuntur quae impedit consequatur maiores, rerum nesciunt quis, numquam nemo reiciendis natus velit Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tempore iusto, officia nobis necessitatibus odit beatae qui vel non dicta excepturi quis aut hic sit voluptatum delectus assumenda sint ex.lore Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint temporibus quo unde sapiente aliquam dolor pariatur enim, ut eum nulla facilis autem delectus esse consectetur corrupti dolorum maiores fugit perspiciatis?</p>
+</body>
+</html>
