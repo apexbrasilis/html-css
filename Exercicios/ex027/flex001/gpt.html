@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Nome do Escritor</title>
+    <style>
+        /* Adicione seus estilos CSS aqui. Por exemplo: */
+        body { font-family: Arial, sans-serif; }
+        .section { margin-bottom: 20px; }
+        /* Estilize cada seção conforme necessário */
+    </style>
+</head>
+<body>
+
+    <!-- Seção Sobre Mim -->
+    <div class="section" id="sobre-mim">
+        <h2>Sobre Mim</h2>
+        <p>// Breve biografia aqui.</p>
+        <img src="url_para_uma_imagem" alt="Uma imagem representativa">
+        <!-- Adicione mais conteúdo conforme necessário -->
+    </div>
+
+    <!-- Seção de Escritos Antigos -->
+    <div class="section" id="escritos">
+        <h2>Escritos Antigos</h2>
+        <ul>
+            <!-- Listar trabalhos aqui. Exemplo: -->
+            <li>Nome do Trabalho - Ano</li>
+            <!-- Repetir para outros trabalhos -->
+        </ul>
+    </div>
+
+    <!-- Seção de Contatos -->
+    <div class="section" id="contato">
+        <h2>Contato</h2>
+        <form id="form-contato">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <script>
+        // Adicione o JavaScript aqui para validar o formulário de contato
+        document.getElementById('form-contato').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Validação do formulário
+            // Exemplo: Verificar se o nome está vazio
+            // Se tudo estiver certo, você pode enviar o formulário ou exibir uma mensagem
+        });
+    </script>
+
+</body>
+</html>
