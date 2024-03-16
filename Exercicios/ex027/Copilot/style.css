@@ -2,9 +2,9 @@
 /* CSS Document */
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 h1{
     text-align: center;
@@ -17,7 +17,7 @@ h1{
 
 nav {
     display: flex;
-    justify-content: right; /* Center the links horizontally */
+    justify-content: flex-end; /* Align the links to the right */
     background-color: #efb44f; /* Dark background color */
     padding: 4px 0; /* Some padding above and below the links */
 }
@@ -37,7 +37,7 @@ body {
 }
 div.container {
     display: flex;
-    
+    flex-wrap: wrap; /* Allow the items to wrap onto multiple lines if necessary */
 }
 div.item {
     background-color: gray;
@@ -47,24 +47,14 @@ div.item {
     margin: 20px;
     flex:auto;
     text-align: center;
-    /* Set the height of the item */
-}   
-
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-    background-color: #000000; /* Matching the nav bar */
-    color: white; /* White text color */
-    font-size: 16px; /* Adjust font size as needed */
-}
-footer a {
-    color: orange; /* Change the text color to orange for the email link */
-    text-decoration: none; /* Remove underline from the link */
 }
 
-footer a:hover {
-    color: white; /* White text color on hover */
+/* Responsive styles */
+@media (max-width: 600px) {
+    div.container {
+        flex-direction: column; /* Stack the items vertically on small screens */
+    }
+    div.item {
+        width: 100%; /* Allow the items to take up the full width on small screens */
+    }
 }
