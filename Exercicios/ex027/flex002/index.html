@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ept-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Flexible Box</title>
+    <style>
+          body, html {
+          margin: 0;
+          padding: 0;
+          margin: 0;
+          }
+          h1{
+              width: 100%;
+              font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+              text-align: center;
+              font-size: 60px;
+              background-color: lightgrey;
+          }
+
+          div.container{
+              background-color: white;
+              display: flex;
+              flex-direction: row;
+              flex-wrap: wrap;
+              justify-content: center;
+              border-radius: 5px;
+              margin: 40px;
+          }
+          div.item{
+              flex: auto;
+              width: 200px;
+              height: 200px;
+              border-radius: 5px;
+              background-color: lightblue;
+              text-align: center;
+              margin: 20px;
+              border: 1px solid black;
+              padding: 10px;
+          }
+          nav{
+              display: flex;
+              flex-direction: row-reverse;
+
+          }
+          a.nav-link{
+              margin: 10px;
+              padding: 10px;
+              text-decoration: none;
+              color: black;
+              border: 1px solid black;
+              border-radius: 5px;
+              background-color: orange;
+          }
+          footer{
+              position: fixed;
+              bottom: 0;
+              width: 100%;
+              background-color: lightgray;
+              text-align: center;
+              padding: 5px;Exemplo de Bloco
+          }
+    </style>
+  </head>
+  <body>
+    <h1>Flexbox</h1>
+    <nav>
+      <a href="#about-me" class="nav-link">About Me</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <div class="container">
+      <div class="item">Exemplo de Bloco A</div>
+      <div class="item">Exemplo de Bloco B</div>
+      <div class="item">Exemplo de Bloco C</div>
+      <div class="item">Exemplo de Bloco D</div>
+      <div class="item">Exemplo de Bloco E</div>
+      <div class="item">Exemplo de Bloco F</div>
+      <div class="item">Exemplo de Bloco G</div>
+      <div class="item">Exemplo de Bloco H</div>
+    </div>
+    <footer>
+      Created by:
+      <a href="mailto:carloslima@icloud.com">carloslima@icloud.com</a>
+      <span id="copyright">
+        ©
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+      </span>
+    </footer>
+  </body>
+</html>
